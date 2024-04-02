@@ -1,2 +1,5 @@
-# qgds-qol-mvp-release
-Used as deployment repository for qgds-qol-mvp /dist assets. Shared with Squiz Git Bridge
+# Queensland Online Design System development space - Binary Repo
+
+This repository provides a bundled CSS/JS
+
+See https://qld-gov-au.github.io/qgds-qol-mvp/ for source repository

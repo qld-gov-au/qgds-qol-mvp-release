@@ -1,14 +1,14 @@
 <!-- // QGDS Component: Button -->
 <!-- // https://getbootstrap.com/docs/5.3/components/buttons -->
 
-{{#if isButton}}
+{{#isbutton}}
 <button class="btn {{classes}}" onclick="{{{onclick}}}">
     {{label}}
 </button>
-{{/if }}
+{{/isbutton}}
 
-{{#if islink}}
-<a class="btn {{classes}}" href="{{href}}" target="{{target}}">
+{{#islink}}
+<a class="btn {{classes}}" href="{{href}}" target="{{target}}" >
     {{label}}
 </a>
-{{/if }}
+{{/islink}}
