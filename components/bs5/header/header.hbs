@@ -3,7 +3,7 @@
         <a class="qld__skip-link__link" href="#content">Skip to main content</a>
         <a class="qld__skip-link__link" href="#main-nav">Skip to main navigation</a>
     </nav>
-    <div class="qld__header__pre-header {{#if sitePreHeader.theme.value}}{{sitePreHeader.theme.value}}{{/if}}">
+    <div class="qld__header__pre-header {{#if sitePreHeader.theme.value}}qld__header__pre-header--{{sitePreHeader.theme.value}}{{/if}}">
         <div class="container-fluid">
             <a href="{{#if sitePreHeader.url.value}}{{sitePreHeader.url.value}}{{else}}https://qld.gov.au{{/if}}" >
                 <span class="qld__header__pre-header-url">{{sitePreHeader.text.value}}</span>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>        
-    <div class="qld__header__main {{siteHeader.theme.value}}">
+    <div class="qld__header__main qld__header__main--{{siteHeader.theme.value}}">
         <div class="container-fluid">
             <div class="qld__header__brand">
                 <a href="{{siteHeader.url.value}}">
@@ -107,7 +107,7 @@
                     </form>
                 </div>
                 <div class="qld__main-nav__focus-trap-bottom"></div>
-            </div>-->
+            </div>
             {{/if}}
         </div>
     </div>
