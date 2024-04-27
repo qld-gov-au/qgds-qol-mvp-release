@@ -1,7 +1,10 @@
 {
     "default_state": {
         "metadata": {
-            "target_url": "metadata-index.html"
+            "target_url": "metadata-index.html",
+            "options": {
+                "showHomeMobile": true
+            }
         },
         "navigation": [
             {
@@ -18,7 +21,10 @@
     },
     "menu_state": {
         "metadata": {
-            "target_url": "metadata-index.html"
+            "target_url": "metadata-index.html",
+            "options": {
+                "showHomeMobile": true
+            }
         },
         "navigation": [
             {
@@ -134,7 +140,10 @@
     },
     "test_states": {
         "metadata": {
-            "target_url": "metadata-index.html"
+            "target_url": "metadata-index.html",
+            "options": {
+                "showHomeMobile": true
+            }
         },
         "navigation": [
             {
