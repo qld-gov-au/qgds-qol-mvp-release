@@ -1,0 +1,11 @@
+
+<!-- VERSION_DETAILS={"project_id":"@qld-gov-au/qgds-bootstrap5","version":"1.0.17","branch":"HEAD","tag":"v1.0.17","commit":"b31c644f4103be7d49c5f2776fa575f4dfc11208","datetime":"2024-06-19T04:57:26Z","majorVersion":"v1"} -->
+
+{{! Select environment, used verbatium if not using predefind key
+cdn := PROD|STAGING|BETA|TEST|DEV|???
+}}
+
+<link rel="stylesheet" href="{{#if cdn }}{{#ifCond cdn '==' 'PROD'}}https://static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'STAGING'}}https://staging-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'BETA'}}https://beta-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'TEST'}}https://test-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'DEV'}}https://dev-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{cdn}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{else}}missing{{/if}}/assets/css/qld.bootstrap.css">
+
+<script type="text/javascript" async src="{{#if cdn }}{{#ifCond cdn '==' 'PROD'}}https://static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'STAGING'}}https://staging-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'BETA'}}https://beta-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'TEST'}}https://test-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'DEV'}}https://dev-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{cdn}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{else}}missing{{/if}}/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" async src="{{#if cdn }}{{#ifCond cdn '==' 'PROD'}}https://static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'STAGING'}}https://staging-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'BETA'}}https://beta-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'TEST'}}https://test-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{#ifCond cdn '==' 'DEV'}}https://dev-static.qgov.net.au/qgds-bootstrap5/v1/v1.x.x-latest{{else}}{{cdn}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{else}}missing{{/if}}/assets/js/qld.bootstrap.min.js"></script>
