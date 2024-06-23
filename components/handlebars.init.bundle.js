@@ -62,7 +62,7 @@ Expecting `+V2.join(", ")+", got '"+(this.terminals_[H]||H)+"'":s1="Parse error 
                 <p class="banner-lead">{{{content}}}</p>
 
                 {{#if ctabuttons}}
-                <div class="banner-cta">
+                <div class="banner-cta btn-toolbar">
                     {{#each ctabuttons}}
                     <a href="{{link}}" class="btn {{class}}" target="{{target}}">{{label}}</a>
                     {{/each}}
@@ -73,7 +73,7 @@ Expecting `+V2.join(", ")+", got '"+(this.terminals_[H]||H)+"'":s1="Parse error 
         </div>
     </div>
 
-    <div class="banner-image {{image.classes}}" style="--background-img:url({{image.url}})"></div>
+    <div class="banner-image {{image.classes}}" style="--banner-background-img:url({{image.url}})"></div>
 
 </div>`;var i3=`<!-- QGDS Component: Blockquote -->
 
@@ -2265,9 +2265,7 @@ Reference: https://getbootstrap.com/docs/5.0/components/pagination/
     QGDS Component: Search input 
 -->
 <div class="container {{variantClass}}">
-
     <div class="qld-search-input {{customClass}}">
-
         <input id="{{ inputID }}" name=" {{ inputName }}" class="form-control" type="text" placeholder="{{placeholder}}"
             autocomplete="off" aria-label="{{ ariaLabel }}" {{#each tags}} data-{{@key}}="{{this}}" {{/each}} />
 
@@ -2277,12 +2275,40 @@ Reference: https://getbootstrap.com/docs/5.0/components/pagination/
         </button>
 
         {{#if suggestions}}
-        <ul class="suggestions suggestions__group"></ul>
+        <ul class="suggestions suggestions__group">
+            <div class="default-suggestions">
+                <div class="suggestions-category mt-2">
+                    <strong>Popular services</strong>
+                    <ul class="mt-2">
+                        {{#each default_suggestions.popular_services}}
+                            <li><a href="{{link}}">{{title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="suggestions-category mt-2">
+                    <strong>Browse by category</strong>
+                    <ul class="mt-2">
+                        {{#each default_suggestions.categories}}
+                            <li><a href="{{link}}">{{title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+                {{#if default_suggestions.options.view_more}}
+                    <div class="suggestions-category mt-4 mb-4">
+                        <a href="{{default_suggestions.options.href}}">{{default_suggestions.options.label}}</a>
+                    </div>
+                {{/if}}
+            </div>
+            <div class="dynamic-suggestions"></div>
+        </ul>
         {{/if}}
-
     </div>
-
-</div>`;var q3=`<!-- QGDS Component: Select -->
+</div>
+`;var q3=`<!-- QGDS Component: Select -->
 
 <!-- Label for the first input field -->
 <label class="qld-text-input-label {{#if isRequired}}field-required{{/if}} {{#if isDisabled}}field-disabled{{/if}}" for="example-1">
