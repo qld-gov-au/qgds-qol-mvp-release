@@ -1996,7 +1996,7 @@ cdn := PROD|STAGING|BETA|TEST|DEV|???
                             {{#each navigation_items}}
                             <li class="col-lg-4 col-sm-12">
                                 <a href="{{target_url}}" class="dropdown-item">
-                                    {{title}}
+                                    <span class="dropdown-item__text">{{title}}</span>
                                     <svg class="chevron__icon">
                                         <use href="{{@root.metadata.options.icon-root}}#qld__icon__arrow-right"></use>
                                     </svg>
@@ -2100,7 +2100,7 @@ cdn := PROD|STAGING|BETA|TEST|DEV|???
                 {{/if}}
                 {{/each }}
                 {{#each CTA}}
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown CTA_feature">
                         <!-- Mobile only -->
                         <div class="nav-item-group mobile-only">
 
@@ -2307,8 +2307,7 @@ Reference: https://getbootstrap.com/docs/5.0/components/pagination/
         </ul>
         {{/if}}
     </div>
-</div>
-`;var q3=`<!-- QGDS Component: Select -->
+</div>`;var q3=`<!-- QGDS Component: Select -->
 
 <!-- Label for the first input field -->
 <label class="qld-text-input-label {{#if isRequired}}field-required{{/if}} {{#if isDisabled}}field-disabled{{/if}}" for="example-1">
