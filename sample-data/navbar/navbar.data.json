@@ -145,7 +145,7 @@
         "CTA": [
             {
                 "id": "CTAone",
-                "target_url": "#",
+                "target_url": "index.html",
                 "label": "Business and Industry",
                 "dropdown_enabled": true,
                 "dropdown_options": {
@@ -196,7 +196,7 @@
             },
             {
                 "id": "CTAtwo",
-                "target_url": "#",
+                "target_url": "index.html",
                 "label": "For government",
                 "dropdown_enabled": true,
                 "dropdown_options": {
@@ -247,7 +247,7 @@
             },
             {
                 "id": "CTAthree",
-                "target_url": "#",
+                "target_url": "login.html",
                 "label": "Login",
                 "dropdown_enabled": true,
                 "dropdown_options": {
