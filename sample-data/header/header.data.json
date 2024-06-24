@@ -12,7 +12,7 @@
                 "value": "https://qld.gov.au"
             },
             "text": {
-                "value": "Queensland Government websites"
+                "value": "www.qld.gov.au"
             },
             "CTA": [
                 {
@@ -163,9 +163,7 @@
             "placeholder": "",
             "label": "",
             "formAction": {
-                "url": "https://www.forgov.qld.gov.au/search",
-                "suggestions": "https://discover.search.qld.gov.au/s/suggest.json",
-                "results": "https://discover.search.qld.gov.au/s/search.json"
+                "url": "https://www.forgov.qld.gov.au/search"
             },
             "options": {
                 "borderStyle": {
@@ -187,7 +185,7 @@
                 "value": "https://qld.gov.au"
             },
             "text": {
-                "value": "Queensland Government websites"
+                "value": "www.qld.gov.au"
             },
             "CTA": [
                 {
@@ -361,7 +359,7 @@
                 "value": "https://qld.gov.au"
             },
             "text": {
-                "value": "Queensland Government websites"
+                "value": "www.qld.gov.au"
             },
             "CTA": [
                 {
@@ -413,7 +411,7 @@
                 "value": "https://qld.gov.au"
             },
             "text": {
-                "value": "Queensland Government websites"
+                "value": "www.qld.gov.au"
             },
             "CTA": [
                 {
@@ -586,7 +584,7 @@
                 "value": "https://qld.gov.au"
             },
             "text": {
-                "value": "Queensland Government websites"
+                "value": "www.qld.gov.au"
             },
             "CTA": [
                 {
