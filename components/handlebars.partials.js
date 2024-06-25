@@ -1,3 +1,4 @@
+/* global Handlebars */
 /** THIS IS A GENERATED FILE **/
 
 import accordion from "../components/bs5/accordion/accordion.hbs?raw";
