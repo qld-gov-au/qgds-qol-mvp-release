@@ -90,3 +90,6 @@ export default function handlebarsPartials(handlebars) {
     handlebars.registerPartial("video", video);
 
 }
+if(typeof(Handlebars) !== 'undefined') {
+  handlebarsPartials(Handlebars);
+}

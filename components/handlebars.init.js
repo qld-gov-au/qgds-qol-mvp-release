@@ -1,16 +1,18 @@
-/* global Handlebars */
+// eslint-disable-next-line no-unused-vars
+import Handlebars from "handlebars";
 import handlebarsHelpers from "./handlebars.helpers.js";
 import handlebarsPartials from "./handlebars.partials.js";
 
 
-/**
- * init function to load all HandleBar partials and helpers
+let isHandlebarsHelpersAndPartialsRegistered = false;
+
+/*
+ * init function to load all HandleBar partials and helpers into passed in handlebars
+ * by default the helpers and partials will autoload if handleBars is found in environment
  *
  * @param {Handlebars} handlebars
  */
-let isHandlebarsHelpersAndPartialsRegistered = false;
-
-export default function init(handlebars = Handlebars) {
+export default function init(handlebars) {
   if (typeof(handlebars) === 'undefined') {
     console.error("Handlebars.init requires HandleBars");
   }
@@ -28,6 +30,3 @@ export default function init(handlebars = Handlebars) {
     console.log("Handlebars not found, init failed");
   }
 }
-
-init();
-
